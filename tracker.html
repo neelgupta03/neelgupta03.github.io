@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Vision Tracker | Neel Gupta</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">← Back to Portfolio</a>
+    </nav>
+
+    <section class="project-header">
+
+        <p class="project-label">ROBOTICS / COMPUTER VISION</p>
+
+        <h1>AI Vision Pan-Tilt Tracker</h1>
+
+        <p class="project-intro">
+            Designed and built a Raspberry Pi-based computer vision system
+            that detects and tracks a face in real time by automatically
+            controlling a two-axis pan-tilt camera mechanism.
+        </p>
+
+        <div class="tech-tags">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Raspberry Pi 5</span>
+            <span>Picamera2</span>
+            <span>I²C</span>
+            <span>Servo Control</span>
+        </div>
+
+    </section>
+
+    <section class="project-section">
+
+        <h2>Live Demonstration</h2>
+
+        <p>
+            During the demonstration, the camera detects the position of my
+            face and automatically commands the pan and tilt servos to keep
+            the target centered as I move through the camera's field of view.
+        </p>
+
+        <video class="project-video" controls>
+            <source src="assets/tracker/Tracker-Demo.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+        </video>
+
+    </section>
+
+    <section class="project-section">
+
+        <h2>System Hardware</h2>
+
+        <img
+            class="project-image"
+            src="assets/tracker/Tracker-Hardware.png"
+            alt="Raspberry Pi AI vision tracker hardware setup"
+        >
+
+        <p>
+            The system combines a Raspberry Pi 5, Camera Module 3,
+            PCA9685 PWM controller, two-axis pan-tilt servo mechanism,
+            and a separate power supply for the servo system.
+        </p>
+
+    </section>
+
+    <section class="project-section">
+
+        <h2>How It Works</h2>
+
+        <div class="system-flow">
+
+            <div>Camera</div>
+            <span>↓</span>
+
+            <div>OpenCV Face Detection</div>
+            <span>↓</span>
+
+            <div>Target Position Error</div>
+            <span>↓</span>
+
+            <div>Tracking Control Logic</div>
+            <span>↓</span>
+
+            <div>PCA9685 PWM Controller</div>
+            <span>↓</span>
+
+            <div>Pan + Tilt Servos</div>
+
+        </div>
+
+        <p>
+            Frames from the Raspberry Pi Camera are processed using OpenCV
+            to locate the target relative to the center of the image.
+            The software calculates horizontal and vertical tracking error
+            and converts that error into servo adjustments. Commands are sent
+            over I²C to the PCA9685 controller, which drives the pan and tilt
+            servos and repositions the camera.
+        </p>
+
+    </section>
+
+    <section class="project-section">
+
+        <h2>Testing & Results</h2>
+
+        <p>
+            Tracking data was recorded during a test run while I moved through
+            different horizontal and vertical positions. The recorded data
+            was then analyzed to visualize how the system adjusted the pan
+            and tilt axes throughout the run.
+        </p>
+
+        <img
+            class="project-image"
+            src="assets/tracker/Tracker-Results.png"
+            alt="AI vision tracker test results graph"
+        >
+
+        <div class="results-box">
+
+            <h3>Test Outcomes</h3>
+
+            <ul>
+                <li>
+                    Successfully tracked a moving face in real time using
+                    computer vision.
+                </li>
+
+                <li>
+                    Dynamically adjusted pan and tilt servo positions in
+                    response to target movement.
+                </li>
+
+                <li>
+                    Logged tracking data during operation for
+                    post-processing and performance analysis.
+                </li>
+            </ul>
+
+        </div>
+
+        <a
+            class="button"
+            href="assets/tracker/Tracker-Data.csv"
+            download
+        >
+            Download Raw Test Data
+        </a>
+
+    </section>
+
+    <section class="project-section">
+
+        <h2>Engineering Challenges</h2>
+
+        <h3>Camera Integration</h3>
+
+        <p>
+            Diagnosed an initial camera detection failure through hardware
+            checks, cable verification, Raspberry Pi camera utilities, and
+            configuration troubleshooting before identifying and replacing
+            the faulty camera module.
+        </p>
+
+        <h3>Servo Control</h3>
+
+        <p>
+            Integrated the PCA9685 PWM controller over I²C to independently
+            control the pan and tilt servos while using a separate power
+            source for the servo system.
+        </p>
+
+        <h3>Tracking Behavior</h3>
+
+        <p>
+            Tuned the relationship between target position error and servo
+            movement to achieve responsive tracking while reducing excessive
+            camera movement.
+        </p>
+
+    </section>
+
+    <section class="project-section">
+
+        <h2>Technical Stack</h2>
+
+        <p>
+            <strong>Hardware:</strong>
+            Raspberry Pi 5, Camera Module 3, PCA9685 PWM Controller,
+            Pan-Tilt Servo Assembly
+        </p>
+
+        <p>
+            <strong>Software:</strong>
+            Python, OpenCV, Picamera2, Raspberry Pi OS
+        </p>
+
+        <p>
+            <strong>Engineering Concepts:</strong>
+            Computer Vision, I²C Communication, PWM, Servo Control,
+            Feedback Control, Data Logging, Experimental Testing
+        </p>
+
+    </section>
+
+    <footer>
+        <p>Neel Gupta | Engineering Portfolio</p>
+    </footer>
+
+</body>
+
+</html>
