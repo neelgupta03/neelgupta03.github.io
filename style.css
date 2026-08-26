@@ -593,3 +593,40 @@ footer {
   }
 
 }
+/* ========================================= */
+/* NOV PROJECT IMAGE GRID */
+/* ========================================= */
+
+.nov-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nov-image-grid .project-image {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.image-caption {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.65;
+}
+
+@media (max-width: 768px) {
+
+    .nov-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nov-image-grid .project-image {
+        height: auto;
+    }
+
+}
