@@ -11,29 +11,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
+
+  <!-- ========================================= -->
   <!-- NAVIGATION -->
+  <!-- ========================================= -->
+
   <header>
+
     <nav>
 
       <h1>Neel Gupta</h1>
 
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
       </ul>
 
     </nav>
+
   </header>
+
 
 
   <main>
 
+
+    <!-- ========================================= -->
     <!-- HERO SECTION -->
+    <!-- ========================================= -->
+
     <section class="hero">
 
       <div class="hero-text">
@@ -50,37 +74,53 @@
           embedded systems, and electromechanical design.
         </p>
 
-        <a class="btn" href="#projects">
+
+        <a
+          class="btn"
+          href="#projects">
+
           View Projects
+
         </a>
+
 
         <a
           class="btn"
           href="Neel_Gupta_Resume.pdf"
           target="_blank">
+
           Resume
+
         </a>
+
 
         <a
           class="btn"
           href="https://github.com/neelgupta03"
           target="_blank"
           rel="noopener noreferrer">
+
           GitHub
+
         </a>
+
 
         <a
           class="btn"
           href="https://www.linkedin.com/in/neel-gupta-011253328/"
           target="_blank"
           rel="noopener noreferrer">
+
           LinkedIn
+
         </a>
 
       </div>
 
 
+
       <!-- HEADSHOT -->
+
       <div class="hero-image">
 
         <img
@@ -99,7 +139,11 @@
     </section>
 
 
+
+    <!-- ========================================= -->
     <!-- ABOUT -->
+    <!-- ========================================= -->
+
     <section id="about">
 
       <div class="container">
@@ -110,9 +154,13 @@
           I am a Mechanical Engineering student at The University of Texas at
           Austin with hands-on experience in mechanical systems, engineering
           testing, embedded systems, systems engineering, and technical
-          documentation. I enjoy building systems that combine mechanical
-          design, electronics, programming, controls, and data analysis to
-          solve real engineering problems.
+          documentation.
+        </p>
+
+        <p>
+          I enjoy designing and building systems that combine mechanical
+          design, electronics, programming, controls, prototyping, and
+          data analysis to solve real engineering problems.
         </p>
 
       </div>
@@ -120,7 +168,11 @@
     </section>
 
 
+
+    <!-- ========================================= -->
     <!-- PROJECTS -->
+    <!-- ========================================= -->
+
     <section id="projects">
 
       <div class="container">
@@ -128,34 +180,40 @@
         <h2>Engineering Projects</h2>
 
         <p class="section-description">
-          Selected projects involving robotics, embedded systems,
-          thermal engineering, mechanical design, and systems engineering.
+          Selected hands-on engineering work featuring hardware,
+          software, prototyping, testing, and real-world engineering
+          development.
         </p>
+
 
 
         <div class="project-grid">
 
 
-          <!-- AI TRACKER -->
+          <!-- ========================================= -->
+          <!-- AI VISION TRACKER -->
+          <!-- ========================================= -->
+
           <div class="project-card">
 
             <h3>AI Vision Pan-Tilt Tracker</h3>
 
             <p>
               Designed and built a Raspberry Pi-based computer vision system
-              that detects and tracks a face in real time using a
-              servo-driven pan-tilt camera mechanism.
+              capable of detecting and autonomously tracking a face in real
+              time using a servo-driven pan-tilt mechanism.
             </p>
 
             <p>
               Integrated a Raspberry Pi 5, Camera Module 3, PCA9685 PWM
-              controller, OpenCV, and Python to create an autonomous visual
-              tracking system with closed-loop motion control.
+              controller, OpenCV, Python, and servo control into a complete
+              electromechanical tracking system.
             </p>
 
             <p>
-              Collected tracking data during system operation and analyzed
-              pan and tilt response to evaluate system performance.
+              Recorded tracking performance during testing and analyzed
+              pan and tilt response data to evaluate the behavior of the
+              control system.
             </p>
 
             <p>
@@ -164,67 +222,62 @@
               Servo Control, I²C, Embedded Systems, Data Analysis
             </p>
 
-            <a class="btn" href="tracker.html">
+
+            <a
+              class="btn"
+              href="tracker.html">
+
               View Project
+
             </a>
 
           </div>
 
 
-          <!-- NASA LSPACE -->
+
+          <!-- ========================================= -->
+          <!-- NOV INTERNSHIP PROJECT -->
+          <!-- ========================================= -->
+
           <div class="project-card">
 
-            <h3>Aquarius Lunar Rover Thermal System</h3>
+            <h3>CT Dyno System Modernization</h3>
 
             <p>
-              Developed a hybrid passive and active thermal-control architecture
-              for a lunar South Pole rover through NASA L'SPACE Mission Concept
-              Academy.
+              Engineering internship project at NOV focused on understanding,
+              testing, documenting, and supporting the modernization of a
+              coiled tubing dynamometer test system.
             </p>
 
             <p>
-              Selected MLI, Z93P and silver FEP surface treatments,
-              pyrolytic graphite heat spreaders, resistance heaters,
-              and redundant temperature sensing.
+              Worked with instrumentation, system layouts, P&amp;IDs,
+              controls concepts, I/O documentation, and engineering
+              recommendations while studying the operation of the existing
+              test system.
             </p>
 
             <p>
-              Developed requirements to maintain critical battery,
-              avionics, and payload zones between 0°C and 40°C while
-              limiting thermal-control power to 25 W average and
-              75 W peak.
+              Participated in dyno testing by running fluid through the
+              system at different BPM rates and analyzing collected data
+              to evaluate system behavior under different operating
+              conditions.
             </p>
 
             <p>
               <strong>Technologies:</strong>
-              Thermal Systems, Systems Engineering, Trade Studies,
-              Requirements Development, Verification Planning
+              Instrumentation, P&amp;IDs, Data Acquisition,
+              Engineering Testing, Controls, Data Analysis,
+              Technical Documentation
             </p>
 
-          </div>
 
+            <a
+              class="btn"
+              href="#nov-project">
 
-          <!-- BAJA -->
-          <div class="project-card">
+              View Project
 
-            <h3>Longhorn Baja SAE</h3>
-
-            <p>
-              Contributed to the development of an off-road competition
-              vehicle as part of a multidisciplinary engineering team.
-            </p>
-
-            <p>
-              Applied mechanical engineering principles to vehicle systems,
-              component design, manufacturing, testing, and subsystem
-              integration.
-            </p>
-
-            <p>
-              <strong>Technologies:</strong>
-              Mechanical Design, Manufacturing, Vehicle Systems,
-              CAD, Engineering Analysis
-            </p>
+            </a>
 
           </div>
 
@@ -236,141 +289,251 @@
     </section>
 
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
+
+    <!-- ========================================= -->
+    <!-- NOV FULL PROJECT -->
+    <!-- ========================================= -->
+
+    <section
+      id="nov-project"
+      class="project-detail">
 
       <div class="container">
 
-        <h2>Experience</h2>
 
+        <!-- PROJECT HEADER -->
 
-        <!-- NOV -->
-        <div class="experience-item">
+        <div class="project-detail-header">
 
-          <h3>NOV</h3>
+          <p class="project-label">
+            ENGINEERING INTERNSHIP
+          </p>
 
-          <h4>Engineering Intern</h4>
+          <h2>
+            CT Dyno System Modernization
+          </h2>
 
-          <ul>
-
-            <li>
-              Supported modernization of a coiled tubing dyno test system
-              through system analysis, testing, and engineering documentation.
-            </li>
-
-            <li>
-              Developed and updated P&amp;IDs, instrumentation and I/O
-              documentation, system overviews, controls concepts,
-              gap analyses, and engineering recommendations.
-            </li>
-
-            <li>
-              Performed dyno stand testing across varying pump rates,
-              recording and analyzing system data to evaluate performance
-              trends under different operating conditions.
-            </li>
-
-            <li>
-              Collaborated with mechanical, electrical, controls,
-              and operations personnel to understand system behavior
-              and support modernization efforts.
-            </li>
-
-          </ul>
+          <p>
+            NOV
+          </p>
 
         </div>
 
 
-        <!-- NASA LSPACE -->
-        <div class="experience-item">
 
-          <h3>NASA L'SPACE Mission Concept Academy</h3>
+        <!-- PROJECT OVERVIEW -->
 
-          <h4>Thermal Engineer</h4>
+        <div class="project-detail-section">
 
-          <ul>
+          <h3>Project Overview</h3>
 
-            <li>
-              Developed the thermal-control concept for the Aquarius
-              lunar rover operating near the lunar South Pole.
-            </li>
+          <p>
+            During my engineering internship at NOV, I worked on the
+            modernization of a coiled tubing dynamometer test system.
+          </p>
 
-            <li>
-              Created subsystem requirements, engineering trade studies,
-              verification plans, procurement strategies, and technical
-              documentation.
-            </li>
-
-            <li>
-              Collaborated with mechanical, electrical, command and data
-              handling, payload, science, and systems engineering team members.
-            </li>
-
-          </ul>
+          <p>
+            The project required understanding how the existing system
+            operated, documenting its mechanical and instrumentation
+            architecture, identifying opportunities for modernization,
+            and supporting system testing and engineering analysis.
+          </p>
 
         </div>
 
 
-        <!-- BAJA -->
-        <div class="experience-item">
 
-          <h3>Longhorn Baja SAE</h3>
+        <!-- ========================================= -->
+        <!-- NOV PHOTO SECTION -->
+        <!-- ========================================= -->
 
-          <h4>Engineering Team Member</h4>
+        <div class="project-detail-section">
 
-          <ul>
+          <h3>Inside the Project</h3>
 
-            <li>
-              Worked within a multidisciplinary student engineering team
-              developing an off-road competition vehicle.
-            </li>
+          <p>
+            Photos from the dyno system, engineering work, instrumentation,
+            and testing will be shown here to provide a visual look at the
+            system and the work completed during the internship.
+          </p>
 
-            <li>
-              Applied mechanical engineering concepts to vehicle design,
-              fabrication, testing, and subsystem integration.
-            </li>
 
-          </ul>
+          <!--
+
+          WE WILL ADD YOUR NOV PHOTOS HERE.
+
+          Once you send me the photos, we can replace this comment with:
+
+          <div class="nov-gallery">
+
+            <img
+              src="media/nov-photo-1.jpg"
+              alt="NOV coiled tubing dyno system">
+
+            <img
+              src="media/nov-photo-2.jpg"
+              alt="NOV dyno instrumentation">
+
+            <img
+              src="media/nov-photo-3.jpg"
+              alt="NOV dyno testing">
+
+          </div>
+
+          -->
 
         </div>
+
+
+
+        <!-- ENGINEERING WORK -->
+
+        <div class="project-detail-section">
+
+          <h3>Engineering Work</h3>
+
+          <p>
+            I developed and updated engineering documentation used to better
+            define the existing dyno system and support future modernization.
+          </p>
+
+          <p>
+            This included reviewing and documenting instrumentation,
+            P&amp;IDs, I/O architecture, system layouts, controls concepts,
+            system gaps, and potential engineering improvements.
+          </p>
+
+        </div>
+
+
+
+        <!-- TESTING -->
+
+        <div class="project-detail-section">
+
+          <h3>Testing &amp; Validation</h3>
+
+          <p>
+            I participated in operating the dyno test stand by running fluid
+            through the system at different BPM rates and recording system
+            behavior under changing operating conditions.
+          </p>
+
+          <p>
+            The resulting data was analyzed to better understand system
+            performance and evaluate trends observed during testing.
+          </p>
+
+        </div>
+
+
+
+        <!-- SYSTEM ENGINEERING -->
+
+        <div class="project-detail-section">
+
+          <h3>System-Level Engineering</h3>
+
+          <p>
+            The project required working across mechanical, instrumentation,
+            controls, and operational aspects of the test system rather than
+            focusing on a single isolated component.
+          </p>
+
+          <p>
+            This provided hands-on experience understanding how real
+            engineering systems are documented, tested, analyzed, and
+            prepared for modernization.
+          </p>
+
+        </div>
+
+
+
+        <!-- KEY AREAS -->
+
+        <div class="project-detail-section">
+
+          <h3>Key Engineering Areas</h3>
+
+          <div class="skills">
+
+            <span>Instrumentation</span>
+
+            <span>P&amp;IDs</span>
+
+            <span>Data Acquisition</span>
+
+            <span>System Testing</span>
+
+            <span>Controls</span>
+
+            <span>I/O Architecture</span>
+
+            <span>Data Analysis</span>
+
+            <span>Technical Documentation</span>
+
+            <span>System Modernization</span>
+
+          </div>
+
+        </div>
+
 
       </div>
 
     </section>
 
 
+
+    <!-- ========================================= -->
     <!-- SKILLS -->
+    <!-- ========================================= -->
+
     <section id="skills">
 
       <div class="container">
 
         <h2>Technical Skills</h2>
 
+
         <div class="skills">
 
           <span>Python</span>
+
           <span>MATLAB</span>
+
           <span>OpenCV</span>
 
           <span>Raspberry Pi</span>
+
           <span>Embedded Systems</span>
+
           <span>Computer Vision</span>
 
           <span>SolidWorks</span>
+
           <span>CAD</span>
+
           <span>Siemens NX</span>
+
           <span>3D Printing</span>
 
           <span>Mechanical Design</span>
+
           <span>Systems Engineering</span>
+
           <span>Engineering Testing</span>
 
           <span>Instrumentation &amp; Controls</span>
+
           <span>Data Acquisition</span>
+
           <span>Data Analysis</span>
 
           <span>P&amp;ID Development</span>
-          <span>Thermal Systems</span>
+
           <span>Technical Documentation</span>
 
         </div>
@@ -380,7 +543,11 @@
     </section>
 
 
+
+    <!-- ========================================= -->
     <!-- CONTACT -->
+    <!-- ========================================= -->
+
     <section id="contact">
 
       <div class="container contact">
@@ -393,27 +560,36 @@
           aerospace &amp; defense?
         </p>
 
+
         <a
           class="btn"
           href="Neel_Gupta_Resume.pdf"
           target="_blank">
+
           View Resume
+
         </a>
+
 
         <a
           class="btn"
           href="https://github.com/neelgupta03"
           target="_blank"
           rel="noopener noreferrer">
+
           GitHub
+
         </a>
+
 
         <a
           class="btn"
           href="https://www.linkedin.com/in/neel-gupta-011253328/"
           target="_blank"
           rel="noopener noreferrer">
+
           LinkedIn
+
         </a>
 
       </div>
@@ -424,7 +600,11 @@
   </main>
 
 
+
+  <!-- ========================================= -->
   <!-- FOOTER -->
+  <!-- ========================================= -->
+
   <footer>
 
     <p>
